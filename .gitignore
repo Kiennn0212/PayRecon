@@ -1,0 +1,67 @@
+# Môi trường ảo và cache Python
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# CSV và bảng tính có thể chứa giao dịch, dù được lưu ngoài thư mục dữ liệu.
+*.[cC][sS][vV]
+*.[xX][lL][sS]
+*.[xX][lL][sS][xXmMbB]
+
+# Chỉ mở cho các định dạng mẫu bên trong data/sample/ (kể cả thư mục con).
+# PO duyệt nội dung tệp giả lập trước khi đưa vào Git.
+!/data/sample/**/*.[cC][sS][vV]
+!/data/sample/**/*.[xX][lL][sS]
+!/data/sample/**/*.[xX][lL][sS][xXmMbB]
+# Tệp khóa tạm của Office, kể cả khi mở bảng tính trong data/sample/.
+~$*
+
+# Các thư mục riêng tư được bỏ qua cả khi nằm trong data/sample/.
+private/
+secrets/
+certs/
+**/config/local/
+raw/
+input/
+output/
+imports/
+exports/
+
+# Cấu hình cục bộ, thông tin xác thực và mẫu môi trường
+.env
+.env.*
+*.env
+!.env.example
+.envrc
+.envrc.*
+*.local
+*.local.*
+credentials.*
+secret.*
+secrets.*
+*.secret.*
+service-account*.json
+
+# Khóa riêng và chứng thư
+*.[kK][eE][yY]
+*.[pP][eE][mM]
+*.[pP]8
+*.[pP]12
+*.[pP][fF][xX]
+*.[cC][rR][tT]
+*.[cC][eE][rR]
+*.[dD][eE][rR]
+*.jks
+*.keystore
+*.ppk
+id_rsa
+id_ed25519
+
+# Tài liệu Word ở thư mục gốc
+/*.[dD][oO][cC][xX]
