@@ -6,7 +6,7 @@ Ví dụ, cửa hàng ghi nhận một đơn hàng 500.000 đồng, còn bảng 
 
 ## Hiện trạng và phạm vi
 
-**Giai đoạn 0 · Khởi tạo và quản trị · `IN_PROGRESS`.** Repository hiện có tài liệu nghiệp vụ và hồ sơ quản lý. PO đã nghiệm thu bốn hồ sơ của TASK-000B. Phần mềm đối soát chưa được triển khai. [Trạng thái các giai đoạn](project-management/phase_status.md)
+**Giai đoạn 0 · Khởi tạo và quản trị · `DONE`.** Ngày 22/11/2026, Project Owner (PO) đã nghiệm thu TASK-000D và chấp nhận commit khởi tạo trên GitHub. Các giai đoạn 1–8 vẫn là `NOT_STARTED`. Phần mềm đối soát chưa được triển khai. [Trạng thái các giai đoạn](project-management/phase_status.md)
 
 Hai phạm vi dưới đây đang chờ BA/Project Owner (PO) quyết định tại **DEC-001**, trạng thái `PROPOSED`.
 

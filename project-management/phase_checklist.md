@@ -1,28 +1,28 @@
 # Checklist các giai đoạn PayRecon
 
-[Bảng trạng thái](phase_status.md) ghi tiến độ hiện tại. Checklist này ghi công việc, đầu vào, đầu ra, tiêu chí nghiệm thu (Acceptance Criteria) và bằng chứng cho từng giai đoạn. Phân bổ công việc và tiêu chí chi tiết của roadmap là `PROPOSED`. Hai tài liệu 8 tuần và 16 tuần dùng cách chia khác nhau. PO sẽ xác định phạm vi Demo MVP/Pilot qua DEC-001 trong [Sổ quyết định](decision_log.md).
+[Bảng trạng thái](phase_status.md) ghi tiến độ hiện tại. Checklist ghi công việc, đầu vào, đầu ra, tiêu chí nghiệm thu và bằng chứng cho từng giai đoạn. PO đã nghiệm thu Giai đoạn 0. Phân bổ công việc và tiêu chí chi tiết của các giai đoạn 1–8 vẫn là `PROPOSED`. PO sẽ xác định phạm vi Demo MVP/Pilot qua DEC-001 trong [Sổ quyết định](decision_log.md).
 
 ## Giai đoạn 0
 
 **Khởi tạo và quản trị.** Đầu vào gồm kết quả phân tích TASK-000, hai tài liệu Word, hiện trạng Git, [AGENTS.md](../AGENTS.md) và chỉ dẫn triển khai TASK-000B của PO.
 
-| Công việc | Tiến độ thực hiện | Bằng chứng hiện có hoặc bằng chứng cần bổ sung |
+| Công việc | Kết quả nghiệm thu | Bằng chứng |
 |---|---|---|
-| Phân tích hiện trạng và rà soát hai tài liệu định hướng, triển khai | Đã hoàn thành phần phân tích | PO xác nhận kết quả phân tích TASK-000 khi giao TASK-000B. Hai phạm vi 8 tuần và 16 tuần đã được nhận diện. |
-| Khởi tạo Git | Đã thực hiện tại máy | Repository có nhánh `main`, chưa có commit đầu tiên. |
-| Kết nối GitHub | Đã cấu hình remote tại máy | `origin` trỏ đến GitHub. Khả năng truy cập remote và quyền ghi chưa được kiểm chứng. |
-| Thiết lập AGENTS.md và .gitignore | Đã tạo và kiểm tra | Hai tệp có ở thư mục gốc. TASK-000A đã thiết lập quy tắc làm việc. TASK-000 đã kiểm tra quy tắc bỏ qua DOCX gốc, dữ liệu cục bộ và ngoại lệ cho `.env.example`. |
-| Thiết lập bốn hồ sơ quản lý dự án | `DONE` · PO đã nghiệm thu TASK-000B | Ngày 22/11/2026, PO chấp nhận bốn hồ sơ làm nền tảng theo dõi dự án tại mục 1 của chỉ dẫn «TASK-000B — ACCEPTANCE / TASK-000C — PLANNING». |
-| Tạo README.md | `DONE` · PO đã nghiệm thu TASK-000C | PO chấp nhận README gốc và mục lục tài liệu trong `docs/` tại chỉ dẫn «TASK-000C — ACCEPTANCE / TASK-000D — PLAN» ngày 22/11/2026. |
-| Thiết lập cấu trúc repository ban đầu | `DONE` trong phạm vi khởi tạo của TASK-000C | PO đã nghiệm thu hai README, thư mục `docs/` và phần cập nhật `.gitignore`. Bốn hồ sơ `project-management/` đã được nghiệm thu tại TASK-000B. Cấu trúc ứng dụng tiếp tục chờ DEC-008. |
-| Rà soát tài liệu và dữ liệu nhạy cảm trước khi commit | Chưa bắt đầu đợt rà soát trước commit đầu tiên | Cần kiểm tra danh sách tệp dự kiến commit và ghi kết quả rà soát Word, sao kê, dữ liệu tài chính cá nhân và bí mật cấu hình. |
-| Nghiệm thu khởi tạo và phê duyệt commit đầu tiên | Chưa bắt đầu | Cần kết quả UAT, danh sách tệp đã rà soát và chỉ dẫn riêng của PO cho phép commit. |
+| Phân tích hiện trạng và rà soát hai tài liệu định hướng, triển khai | Đạt | PO xác nhận kết quả phân tích TASK-000 khi giao TASK-000B. Hai phạm vi 8 tuần và 16 tuần đã được nhận diện. |
+| Khởi tạo Git | Đạt | Nhánh `main` có commit đầu tiên với thông điệp `chore: initialize PayRecon project governance`. |
+| Kết nối GitHub | Đạt | Push lên `Kiennn0212/PayRecon` thành công. Nhánh `main` cục bộ theo dõi `origin/main`. Hash trên GitHub khớp với commit cục bộ khi bàn giao. |
+| Thiết lập AGENTS.md và .gitignore | Đạt | Hai tệp có ở thư mục gốc. TASK-000A đã thiết lập quy tắc làm việc. TASK-000 đã kiểm tra quy tắc bỏ qua DOCX gốc, dữ liệu cục bộ và ngoại lệ cho `.env.example`. |
+| Thiết lập bốn hồ sơ quản lý dự án | Đạt · TASK-000B `DONE` | Ngày 22/11/2026, PO chấp nhận bốn hồ sơ làm nền tảng theo dõi dự án tại mục 1 của chỉ dẫn «TASK-000B — ACCEPTANCE / TASK-000C — PLANNING». |
+| Tạo README.md | Đạt · TASK-000C `DONE` | PO chấp nhận README gốc và mục lục tài liệu trong `docs/` tại chỉ dẫn «TASK-000C — ACCEPTANCE / TASK-000D — PLAN» ngày 22/11/2026. |
+| Thiết lập cấu trúc repository ban đầu | Đạt · TASK-000C `DONE` | PO đã nghiệm thu hai README, thư mục `docs/` và phần cập nhật `.gitignore`. Bốn hồ sơ `project-management/` đã được nghiệm thu tại TASK-000B. Cấu trúc ứng dụng tiếp tục chờ DEC-008. |
+| Rà soát tài liệu và dữ liệu nhạy cảm trước khi commit | Đạt | TASK-000D đã rà soát nội dung và diff của tám tệp được PO duyệt. Không phát hiện dữ liệu tài chính cá nhân hoặc bí mật cấu hình. Cây tệp trên GitHub khớp cả tám tệp và không chứa hai DOCX nội bộ. |
+| Nghiệm thu khởi tạo và phê duyệt commit đầu tiên | Đạt · TASK-000D `DONE` | PO cho phép tạo commit tại «TASK-000D — HUMAN APPROVAL: INITIAL COMMIT», sau đó cho phép push. Sau khi kiểm tra kết quả trên GitHub, PO nghiệm thu commit và đóng giai đoạn. |
 
-**Đầu ra dự kiến.** Repository có Git và remote GitHub, quy tắc làm việc, quy tắc bỏ qua tệp, README, cấu trúc đã thống nhất, bốn hồ sơ quản lý, kết quả rà soát trước commit và quyết định của PO về commit đầu tiên.
+**Đầu ra đã bàn giao.** Repository GitHub có khung thư mục ban đầu, hai README, `AGENTS.md`, `.gitignore` và bốn hồ sơ quản lý.
 
-**Tiêu chí nghiệm thu dự kiến.** Mỗi công việc có bằng chứng tương ứng. PO kiểm tra README, cấu trúc repository, phạm vi tệp đưa vào commit và kết quả rà soát dữ liệu nhạy cảm. Ghi riêng kết quả nghiệm thu của PO và việc PO cho phép commit đầu tiên.
+**Kết quả nghiệm thu.** Cả chín công việc trên đều đạt. PO đã kiểm tra README, cấu trúc repository và chấp nhận danh sách tám tệp sau rà soát dữ liệu nhạy cảm.
 
-**Bằng chứng nghiệm thu giai đoạn.** Chờ PO. Các dòng “đã thực hiện” ghi nhận hiện trạng kỹ thuật. Giai đoạn 0 vẫn là `IN_PROGRESS`.
+**Quyết định của PO ngày 22/11/2026.** Theo «TASK-000D — FINAL ACCEPTANCE / PHASE 0 CLOSURE», TASK-000D là `DONE` và Giai đoạn 0 là `APPROVED / DONE`. PO đã chấp nhận commit `ddcb202764ee487dd806b13de81f811c89fab799` trên `origin/main`. [Xem commit đã nghiệm thu trên GitHub](https://github.com/Kiennn0212/PayRecon/commit/ddcb202764ee487dd806b13de81f811c89fab799)
 
 ## Giai đoạn 1
 
